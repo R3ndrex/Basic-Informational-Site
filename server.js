@@ -10,7 +10,7 @@ const serverInstance = http.createServer((req, res) => {
             res.statusCode = 200;
             break;
         }
-        case "/contact": {
+        case "/contact-me": {
             path += "contact-me.html";
             res.statusCode = 200;
             break;
@@ -20,9 +20,9 @@ const serverInstance = http.createServer((req, res) => {
             res.statusCode = 200;
             break;
         }
-        case "/contact-us": {
+        case "/contact": {
             res.statusCode = 302;
-            res.setHeader("Location", "/contact");
+            res.setHeader("Location", "/contact-me");
             break;
         }
         default: {
